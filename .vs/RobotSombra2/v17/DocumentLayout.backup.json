@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|c:\\users\\brank\\onedrive\\unity\\robot sombra 2 git\\robotsombra2\\assets\\scripts\\scenecontrollers\\levellogscenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenecontrollers\\levellogscenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|c:\\users\\brank\\onedrive\\unity\\robot sombra 2 git\\robotsombra2\\assets\\scripts\\settingsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\settingsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|c:\\users\\brank\\onedrive\\unity\\robot sombra 2 git\\robotsombra2\\assets\\scripts\\managers\\submenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\submenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LevelLogSceneController.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\LevelLogSceneController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneControllers\\LevelLogSceneController.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\LevelLogSceneController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneControllers\\LevelLogSceneController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T00:54:09.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SettingsMenu.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SettingsMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SettingsMenu.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SettingsMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SettingsMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T00:10:03.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SubmenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\SubmenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\SubmenuManager.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\SubmenuManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\SubmenuManager.cs",
+              "ViewState": "AgIAAA8AAAAA+v/////9vxYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T00:09:26.712Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

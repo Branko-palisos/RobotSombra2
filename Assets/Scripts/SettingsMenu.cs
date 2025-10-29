@@ -36,6 +36,11 @@ using UnityEngine.UI;
        resolutionDropdown.value = currentResolutionIndex;
        resolutionDropdown.RefreshShownValue();
    }
+   
+  public void SetFullScreen(bool isFullScreen)
+    {
+        Screen.fullScreen = isFullScreen;       
+    }
    // Update is called once per frame
 
    void Update()
@@ -49,7 +54,6 @@ using UnityEngine.UI;
        volumeQuantity.text = volumeQuantityTemp.ToString();
 
    }    
-
 public void SetResolution(int resolutionIndex)
    {
        Resolution resolution = resolutions[resolutionIndex];
