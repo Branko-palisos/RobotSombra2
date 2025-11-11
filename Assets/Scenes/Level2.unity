@@ -485,7 +485,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &789525011
@@ -628,7 +628,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &861264738
@@ -639,6 +639,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4954427796526116050, guid: 879193d371540cb4183083e4edb80665, type: 3}
+      propertyPath: textManager
+      value: 
+      objectReference: {fileID: 2486561654003539493, guid: 53f47e3c2dacd9e45bb503dac546802d, type: 3}
     - target: {fileID: 5417010861246748044, guid: 879193d371540cb4183083e4edb80665, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -868,7 +872,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1216427297
@@ -1423,6 +1427,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6a40c509bb81874f8c2cd4bd5d33024, type: 3}
+--- !u!1001 &1772160594
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5638098296141565948, guid: 53f47e3c2dacd9e45bb503dac546802d, type: 3}
+      propertyPath: m_Name
+      value: TextManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768947597311670169, guid: 53f47e3c2dacd9e45bb503dac546802d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768947597311670169, guid: 53f47e3c2dacd9e45bb503dac546802d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768947597311670169, guid: 53f47e3c2dacd9e45bb503dac546802d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768947597311670169, guid: 53f47e3c2dacd9e45bb503dac546802d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768947597311670169, guid: 53f47e3c2dacd9e45bb503dac546802d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768947597311670169, guid: 53f47e3c2dacd9e45bb503dac546802d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768947597311670169, guid: 53f47e3c2dacd9e45bb503dac546802d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768947597311670169, guid: 53f47e3c2dacd9e45bb503dac546802d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768947597311670169, guid: 53f47e3c2dacd9e45bb503dac546802d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768947597311670169, guid: 53f47e3c2dacd9e45bb503dac546802d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 53f47e3c2dacd9e45bb503dac546802d, type: 3}
 --- !u!1001 &2025110995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1612,7 +1673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6773742702032272529, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
       propertyPath: speed
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6773742702032272529, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
       propertyPath: fruitCountTMP
@@ -1763,7 +1824,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2075863044
@@ -1917,3 +1978,4 @@ SceneRoots:
   - {fileID: 861264738}
   - {fileID: 2075863045}
   - {fileID: 144449563}
+  - {fileID: 1772160594}

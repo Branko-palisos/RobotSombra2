@@ -14,6 +14,7 @@ public class Level1SceneController : MonoBehaviour
     void Start()
     {
         gameManager = GameManager.gameManager;
+        
     }
     internal void UpdateFruitCountTMP()
     {

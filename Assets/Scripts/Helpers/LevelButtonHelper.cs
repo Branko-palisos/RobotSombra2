@@ -24,7 +24,7 @@ public class LevelButtonHelper : MonoBehaviour
         else
         {
           //  Debug.Log("Disabled");
-            Destroy(gameObject);
+          //  Destroy(gameObject);
         }
     }
 }

@@ -342,6 +342,7 @@
 "Assets/Scripts/Managers/EnumManager.cs"
 "Assets/Scripts/Managers/GameManager.cs"
 "Assets/Scripts/Managers/SubmenuManager.cs"
+"Assets/Scripts/Managers/TextManager.cs"
 "Assets/Scripts/Object/FruitBehaviour.cs"
 "Assets/Scripts/Object/LimitBehaviour.cs"
 "Assets/Scripts/Object/PlayerBehaviour.cs"

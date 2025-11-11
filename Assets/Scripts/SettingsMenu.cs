@@ -14,16 +14,15 @@ public class SettingsMenu : MonoBehaviour
     public AudioMixer audioMixer;
     public Slider volumeSlider;
     public TextMeshProUGUI volumeQuantity;
-    [SerializeField]
-    TMP_FontAsset font;
+    TextManager textManager;
 
     [SerializeField]
      TextMeshProUGUI volumeTMP;
    void Start()
    { //var foundCanvasObjects = FindObjectsByType<CanvasRenderer>(FindObjectsSortMode.None);
 
-
-        Fonts(1031);
+        textManager = TextManager.textManager;
+       
         Screen.fullScreen = false;
        SetVolume();
        resolutions = Screen.resolutions;
@@ -47,17 +46,9 @@ public class SettingsMenu : MonoBehaviour
        resolutionDropdown.value = currentResolutionIndex;
        resolutionDropdown.RefreshShownValue();
    }
-    public void Fonts(int fontIndex)
+    public void UpdateFonts(int fontIndex)
     {
-        TextMeshProUGUI[] texts = FindObjectsByType<TextMeshProUGUI>(FindObjectsSortMode.None);
-        foreach (TextMeshProUGUI text in texts)
-        {
-            // Haz algo con cada objeto, por ejemplo, activar un componente
-           // Debug.Log("" + text);
-            Debug.Log(fontIndex);
-            text.font = font;
-        }
-      
+        textManager.SetFont(fontIndex);
     }
   public void SetFullScreen(bool isFullScreen)
     {
@@ -80,7 +71,7 @@ public class SettingsMenu : MonoBehaviour
 public void SetResolution(int resolutionIndex)
    {
        Resolution resolution = resolutions[resolutionIndex];
-        Debug.Log("resolution");
+      //  Debug.Log("resolution");
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
    } 
    public void SetQuality (int qualityIndex)

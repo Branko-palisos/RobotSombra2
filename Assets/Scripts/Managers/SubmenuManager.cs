@@ -20,6 +20,7 @@ public class SubmenuManager : MonoBehaviour
         {
             submenuManager = this;
             
+            
         }
         else
         {
