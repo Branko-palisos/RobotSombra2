@@ -3,25 +3,25 @@
 //using System.Collections.Generic;
 //using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 
-public class MainMenuSceneController : MonoBehaviour
+public class MainMenuSceneController : SceneController   
 {
     [SerializeField]
     GameObject settingsSubmenu;
     public void LevelLog()
     {
-        SceneManager.LoadScene(EnumManager.Scenes.LevelLog.ToString());
+        ChangeScene(EnumManager.Scenes.LevelLog);
        // Debug.Log("LevelScene");
     }
     public void BananaScene()
-    {
-        SceneManager.LoadScene(EnumManager.Scenes.BananaScene.ToString());
+    {     
+      ChangeScene(EnumManager.Scenes.BananaScene);
        // Debug.Log("LevelScene");
     }
     public void LevelMaker()
     {
-        SceneManager.LoadScene(EnumManager.Scenes.LevelMaker.ToString());   
+        ChangeScene(EnumManager.Scenes.LevelMaker);   
     }
     public void ExitFuncion()
     {
@@ -30,7 +30,7 @@ public class MainMenuSceneController : MonoBehaviour
     }
     public void SettingsMenu()
     {
-        SceneManager.LoadScene(EnumManager.Scenes.SettingsMenu.ToString());
+        ChangeScene(EnumManager.Scenes.SettingsMenu);
     }
     public void ExitSettingsMenu()
     {
@@ -38,21 +38,23 @@ public class MainMenuSceneController : MonoBehaviour
     }
     public void Level1()
     {
-        SceneManager.LoadScene(EnumManager.Scenes.Level1.ToString());
+        ChangeScene(EnumManager.Scenes.Level1);
        // Debug.Log("Level1");      
     }
     public void Level2()
     {
-        SceneManager.LoadScene(EnumManager.Scenes.Level2.ToString());
+        ChangeScene(EnumManager.Scenes.Level2);
       //  Debug.Log("Level2");
        if (Input.GetKey("w"))
         {
          //   Debug.Log("Level 2");
         }
     }
+
+   
     public void MainMenu()
     {
-        SceneManager.LoadScene(EnumManager.Scenes.MainMenu.ToString());
+        ChangeScene(EnumManager.Scenes.MainMenu);
     }
     public void Share()
     {

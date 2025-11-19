@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class FruitBehaviour : MonoBehaviour
-{ 
+{
+    internal delegate void GetFruit();
+    internal static event GetFruit onGetFruit;
     SubmenuManager submenuManager;
      Level2SceneController level2SceneController;       
     private PlayerBehaviour playerBehaviour;
@@ -14,9 +16,21 @@ public class FruitBehaviour : MonoBehaviour
     private float minY = -3.5f;
     private float maxY = 3.5f;
     // funciones
+    private void Start()
+    {
+       gameManager = GameManager.gameManager;
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
+       
         Debug.Log("CollidedWith =  " + collision.gameObject.name);
+        gameManager.SetFruitCount(gameManager.GetFruitCount() + 1);
+        if (onGetFruit != null)
+        {
+            Debug.Log("Send signal");
+            // mando la señal
+            onGetFruit();
+        }
         // sharky.GetComponent<PlayerBehaviour>().GetFruit();
         playerBehaviour = collision.gameObject.GetComponent<PlayerBehaviour>();     
         playerBehaviour.GetFruit();
@@ -24,6 +38,7 @@ public class FruitBehaviour : MonoBehaviour
 
         transform.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 0);
         gameObject.SetActive(true);
+
         if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2))
         {
             Debug.Log("speed up");
@@ -43,5 +58,4 @@ public class FruitBehaviour : MonoBehaviour
             // submenuManager.Win();
         }
     }
- 
 }

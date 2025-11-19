@@ -80,7 +80,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             transform.position += new Vector3(1 * speed * Time.deltaTime, 0, 0);
             transform.eulerAngles = new Vector3(0, 0, 0);
-            Debug.Log("move");
+          //  Debug.Log("move");
         }
         if (Input.GetKey("a"))
         {
@@ -120,8 +120,29 @@ public class PlayerBehaviour : MonoBehaviour
             transform.position += new Vector3(0, 1 * speed * Time.deltaTime, 0);
         }
     }
-    
-   internal void GetFruit()
+   public void Level3Movement()
+    {
+        if (Input.GetKey("d"))
+        {
+            transform.position += new Vector3(1 * speed * Time.deltaTime, 0, 0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
+            Debug.Log("move");
+        }
+        if (Input.GetKey("a"))
+        {
+            transform.eulerAngles = new Vector3(0, -180, 0);
+            transform.position += new Vector3(-1 * speed * Time.deltaTime, 0, 0);
+        }
+        if (Input.GetKey("w"))
+        {
+            transform.position += new Vector3(0, 1 * speed * Time.deltaTime, 0);
+        }
+        if (Input.GetKey("s"))
+        {
+            transform.position += new Vector3(0, -1 * speed * Time.deltaTime, 0);
+        }
+    }
+    internal void GetFruit()
     {
         StartCoroutine(GetFruitCR());
     }
@@ -150,8 +171,7 @@ public class PlayerBehaviour : MonoBehaviour
                onGotFruit();
             
         }
-        Level1SceneController.UpdateFruitCountTMP();
-        Debug.Log("fruitCount = " + fruitCount);
+        //Debug.Log("fruitCount = " + fruitCount);
     }    
     public void NextLevelButton()
     {

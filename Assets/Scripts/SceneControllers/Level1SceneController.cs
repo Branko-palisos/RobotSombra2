@@ -1,29 +1,35 @@
 //terminamos clean code
 //using System.Collections;
 //using System.Collections.Generic;
+using System;
 using TMPro;
 using UnityEngine;
 
 
-public class Level1SceneController : MonoBehaviour
+public class Level1SceneController : SceneController
 {
-    GameManager gameManager;        
+
     [SerializeField]
     TextMeshProUGUI fruitCountTMP;
     // Start is called before the first frame update
-    void Start()
-    {
-        gameManager = GameManager.gameManager;
-        
-    }
+
     internal void UpdateFruitCountTMP()
     {
+        Debug.Log("Update Fruit Count");
         fruitCountTMP.text = gameManager.fruitCount.ToString();
 
     }
     // Update is called once per frame
     void Update()
     {
-        GameManager.gameManager.SetFruitCount(3);
+   
+    }
+    void OnEnable()
+    {
+        FruitBehaviour.onGetFruit += UpdateFruitCountTMP;
+    }
+    void OnDisable()
+    {
+        FruitBehaviour.onGetFruit -= UpdateFruitCountTMP;
     }
 }

@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]    
     TextMeshProUGUI fruitCountTMP;
    Level1SceneController Level1SceneController;
-   internal float fruitCount;
+   internal int fruitCount;
    internal TextMeshProUGUI DETAP;
     PlayerBehaviour playerBehaviour;
     int lastCompletedLevel = 0;
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     }
     
    
-    internal float GetFruitCount()
+    internal int GetFruitCount()
     {
         return fruitCount;
     }

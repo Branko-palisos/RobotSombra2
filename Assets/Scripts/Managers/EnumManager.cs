@@ -8,7 +8,7 @@ public class EnumManager : MonoBehaviour
 {
    internal static EnumManager instance;
 
-    internal enum Scenes
+    public enum Scenes
     {
         BananaScene,
         LevelLog,
