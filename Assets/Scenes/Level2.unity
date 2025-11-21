@@ -974,7 +974,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -82.2, y: 104.51}
+  m_AnchoredPosition: {x: -130.5, y: 140.6}
   m_SizeDelta: {x: 200, y: 45.383}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1218105183
@@ -997,7 +997,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 195
+  m_text: 00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1594,7 +1594,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8454573042593484766, guid: e9cfa92bbc59f144eb515c5e73b632fb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1872,6 +1872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoseSubmenu: {fileID: 2025110996}
+  Lv2FruitCount: {fileID: 1218105183}
 --- !u!1 &2139517537
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,7 +25,9 @@ public class PlayerBehaviour : MonoBehaviour
     internal static event OnPlayerDeath onPlayerDeath;
     private GameManager gameManager;
     [SerializeField]
-    internal float speed = 5.0f;
+     float startspeed = 5.0f;
+     float currentSpeed;
+     float highSpeed = 8.0f;
     Vector3 growFactor = new Vector3(0.1f, 0.1f, 0.1f);
     private Vector3 growLimit = new Vector3(2, 2, 2);
     private Animator animator;
@@ -36,6 +38,8 @@ public class PlayerBehaviour : MonoBehaviour
     private int max = 3;
     private int waitBeforeChangeScene = 3;
     private int fruitCount = 3;
+    private Rigidbody rb;
+
     [SerializeField]
     GameObject LoseText;
     // Start is called before the first frame update
@@ -47,6 +51,8 @@ public class PlayerBehaviour : MonoBehaviour
     {
         fruitCount = 95;
         submenuManager = SubmenuManager.submenuManager;
+        currentSpeed = startspeed;
+        rb = GetComponent<Rigidbody>();
     }
     void Update()
     {
@@ -71,29 +77,45 @@ public class PlayerBehaviour : MonoBehaviour
             Level2Movement();
         }
         Vector3 direction = new Vector3 (0,1,0);    
-        Vector3 velocity  = direction * speed;       
+        Vector3 velocity  = direction * currentSpeed;       
+    }
+    private void FixedUpdate()
+    {
+        if (Input.GetKeyDown("d"))
+        {
+//rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+// seguir anazlzan esta linea
+        }
     }
     void Level1Movement()
     {
       //  Debug.Log("Level1Movement");
         if (Input.GetKey("d"))
         {
-            transform.position += new Vector3(1 * speed * Time.deltaTime, 0, 0);
+            transform.position += new Vector3(1 * currentSpeed * Time.deltaTime, 0, 0);
             transform.eulerAngles = new Vector3(0, 0, 0);
-          //  Debug.Log("move");
+            //  Debug.Log("move");           
         }
         if (Input.GetKey("a"))
         {
             transform.eulerAngles = new Vector3(0, -180, 0);
-            transform.position += new Vector3(-1 * speed * Time.deltaTime, 0, 0);
+            transform.position += new Vector3(-1 * currentSpeed * Time.deltaTime, 0, 0);            
         }
         if (Input.GetKey("w"))
         {
-            transform.position += new Vector3(0, 1 * speed * Time.deltaTime, 0);
+            transform.position += new Vector3(0, 1 * currentSpeed * Time.deltaTime, 0);          
         }
         if (Input.GetKey("s"))
         {
-            transform.position += new Vector3(0, -1 * speed * Time.deltaTime, 0);
+            transform.position += new Vector3(0, -1 * currentSpeed * Time.deltaTime, 0);        
+        }
+        if (Input.GetKeyDown("z"))
+        {
+            currentSpeed = highSpeed;
+        }
+        if (Input.GetKeyUp("z"))
+        {
+            currentSpeed = startspeed;
         }
     }
     void Level2Movement()
@@ -101,13 +123,13 @@ public class PlayerBehaviour : MonoBehaviour
         Debug.Log("Lewvel 2 movement");
         if (Input.GetKey("d"))
         {
-            transform.position += new Vector3(1 * speed * Time.deltaTime, 0, 0);
+            transform.position += new Vector3(1 * currentSpeed * Time.deltaTime, 0, 0);
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
         if (Input.GetKey("a"))
         {
             transform.eulerAngles = new Vector3(0, -180, 0);
-            transform.position += new Vector3(-1 * speed * Time.deltaTime, 0, 0);
+            transform.position += new Vector3(-1 * currentSpeed * Time.deltaTime, 0, 0);
         }
         if (Input.GetKeyDown("w"))
         {
@@ -117,29 +139,29 @@ public class PlayerBehaviour : MonoBehaviour
         }
         if (bill == true)
         {
-            transform.position += new Vector3(0, 1 * speed * Time.deltaTime, 0);
+            transform.position += new Vector3(0, 1 * currentSpeed * Time.deltaTime, 0);
         }
     }
    public void Level3Movement()
     {
         if (Input.GetKey("d"))
         {
-            transform.position += new Vector3(1 * speed * Time.deltaTime, 0, 0);
+            transform.position += new Vector3(1 * currentSpeed * Time.deltaTime, 0, 0);
             transform.eulerAngles = new Vector3(0, 0, 0);
             Debug.Log("move");
         }
         if (Input.GetKey("a"))
         {
             transform.eulerAngles = new Vector3(0, -180, 0);
-            transform.position += new Vector3(-1 * speed * Time.deltaTime, 0, 0);
+            transform.position += new Vector3(-1 * currentSpeed * Time.deltaTime, 0, 0);
         }
         if (Input.GetKey("w"))
         {
-            transform.position += new Vector3(0, 1 * speed * Time.deltaTime, 0);
+            transform.position += new Vector3(0, 1 * currentSpeed * Time.deltaTime, 0);
         }
         if (Input.GetKey("s"))
         {
-            transform.position += new Vector3(0, -1 * speed * Time.deltaTime, 0);
+            transform.position += new Vector3(0, -1 * currentSpeed * Time.deltaTime, 0);
         }
     }
     internal void GetFruit()
@@ -197,15 +219,15 @@ public class PlayerBehaviour : MonoBehaviour
     }
    internal float GetSpeed()
     {
-        return speed;
+        return currentSpeed;
     }
    internal void SetSpeed(float _amount)
     {
-        speed = _amount;
+        currentSpeed = _amount;
     }
     internal void ChangeSpeed( float _change)
     {
-        speed += _change;
+        currentSpeed += _change;
     }
     public void Death()
     {

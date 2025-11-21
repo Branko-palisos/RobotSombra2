@@ -7,8 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField]    
-    TextMeshProUGUI fruitCountTMP;
    Level1SceneController Level1SceneController;
    internal int fruitCount;
    internal TextMeshProUGUI DETAP;
@@ -51,7 +49,8 @@ public class GameManager : MonoBehaviour
     }
     internal void SetFruitCount(int _amount)
     {
-        fruitCount = _amount;       
+        fruitCount = _amount;
+        Debug.Log($"FruitCount ={fruitCount}");
     }
     internal void ChangeLastLevelCompleted(int _amount)
     {
