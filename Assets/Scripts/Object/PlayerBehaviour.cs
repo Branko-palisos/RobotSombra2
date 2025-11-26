@@ -38,7 +38,8 @@ public class PlayerBehaviour : MonoBehaviour
     private int max = 3;
     private int waitBeforeChangeScene = 3;
     private int fruitCount = 3;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
+    private Vector3 direction;
 
     [SerializeField]
     GameObject LoseText;
@@ -52,7 +53,7 @@ public class PlayerBehaviour : MonoBehaviour
         fruitCount = 95;
         submenuManager = SubmenuManager.submenuManager;
         currentSpeed = startspeed;
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
     }
     void Update()
     {
@@ -71,21 +72,19 @@ public class PlayerBehaviour : MonoBehaviour
         }
         // si el nombre de la escena actual es equal a nivel 1
       //  Debug.Log($"Escena actual: {SceneManager.GetActiveScene().name}");
-        if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
-        {
-            Debug.Log("Call lvl 2 movement");
-            Level2Movement();
-        }
-        Vector3 direction = new Vector3 (0,1,0);    
+        
+        
         Vector3 velocity  = direction * currentSpeed;       
     }
     private void FixedUpdate()
     {
-        if (Input.GetKeyDown("d"))
+        if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
         {
-//rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
-// seguir anazlzan esta linea
+            //  direction = new Vector3(movimientoHorizontal, 0.0f, movimientoVertical);
+            Debug.Log("Call lvl 2 movement");
+            Level2Movement();
         }
+
     }
     void Level1Movement()
     {
@@ -120,8 +119,29 @@ public class PlayerBehaviour : MonoBehaviour
     }
     void Level2Movement()
     {
-        Debug.Log("Lewvel 2 movement");
-        if (Input.GetKey("d"))
+        if (Input.GetAxis("Horizontal") == 0)
+        {
+            return;
+        }
+        float movimientoHorizontal = Input.GetAxis("Horizontal");
+        float movimientoVertical = Input.GetAxis("Vertical");
+        Debug.Log("Fixed Update");
+        Debug.Log("Horizontal movement" + movimientoHorizontal);
+        rb.velocity = new Vector3(movimientoHorizontal, movimientoVertical, 0) * currentSpeed;
+        Debug.Log("Level 2 movement");
+     
+        if (currentSpeed == 0)
+        {
+            movimientoHorizontal = 5;
+            movimientoVertical = 5; 
+        }
+        if (currentSpeed != 0)
+        {
+            movimientoHorizontal = 0;
+            movimientoVertical = 0;
+        }
+        
+      /*  if (Input.GetKey("d"))
         {
             transform.position += new Vector3(1 * currentSpeed * Time.deltaTime, 0, 0);
             transform.eulerAngles = new Vector3(0, 0, 0);
@@ -141,7 +161,8 @@ public class PlayerBehaviour : MonoBehaviour
         {
             transform.position += new Vector3(0, 1 * currentSpeed * Time.deltaTime, 0);
         }
-    }
+      */
+    } 
    public void Level3Movement()
     {
         if (Input.GetKey("d"))
