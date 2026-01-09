@@ -11,8 +11,8 @@ public class FruitBehaviour : MonoBehaviour
      Level2SceneController level2SceneController;       
     private PlayerBehaviour playerBehaviour;
     private GameManager gameManager;        
-    private int minX = -8;
-    private int maxX = 8;
+    private float minX = -6.5f;
+    private float maxX = 7f;
     private float minY = -3.5f;
     private float maxY = 3.5f;
     // funciones
@@ -20,16 +20,17 @@ public class FruitBehaviour : MonoBehaviour
     {
        gameManager = GameManager.gameManager;
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
        
         Debug.Log("CollidedWith =  " + collision.gameObject.name);
         gameManager.SetFruitCount(gameManager.GetFruitCount() + 1);
         if (onGetFruit != null)
         {
-            Debug.Log("Send signal");
+            //Debug.Log("Send signal");
             // mando la señal
             onGetFruit();
+
         }
         // sharky.GetComponent<PlayerBehaviour>().GetFruit();
         playerBehaviour = collision.gameObject.GetComponent<PlayerBehaviour>();     
@@ -41,6 +42,7 @@ public class FruitBehaviour : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2))
         {
+
             Debug.Log("speed up");
             //    playerBehaviour.speed += 0.8f;
             //  playerBehaviour.SetSpeed(playerBehaviour.GetSpeed() + 0.8f);

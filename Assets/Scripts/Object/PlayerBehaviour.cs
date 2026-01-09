@@ -11,10 +11,9 @@ using static EnumManager;
 //using static UnityEngine.RuleTile.TilingRuleOutput;
 public class PlayerBehaviour : MonoBehaviour
 {
-    [SerializeField]
-    Level1SceneController Level1SceneController;
     SubmenuManager submenuManager;
-    public GameObject nextLevelButton;
+    [SerializeField]
+     GameObject nextLevelButton;
     [SerializeField]
     Level2SceneController level2SceneController;
     [SerializeField]    
@@ -31,15 +30,17 @@ public class PlayerBehaviour : MonoBehaviour
     Vector3 growFactor = new Vector3(0.1f, 0.1f, 0.1f);
     private Vector3 growLimit = new Vector3(2, 2, 2);
     private Animator animator;
-    public bool bill = false;
     [SerializeField]
     private int min = 0;
     [SerializeField]    
     private int max = 3;
+    [SerializeField]
+    private float rbSpeed = 30.0f;
     private int waitBeforeChangeScene = 3;
     private int fruitCount = 3;
     private Rigidbody2D rb;
     private Vector3 direction;
+    public float runSpeed;
 
     [SerializeField]
     GameObject LoseText;
@@ -54,12 +55,20 @@ public class PlayerBehaviour : MonoBehaviour
         submenuManager = SubmenuManager.submenuManager;
         currentSpeed = startspeed;
         rb = GetComponent<Rigidbody2D>();
+        Debug.Log($"{SceneManager.GetActiveScene().name}");
     }
     void Update()
     {
-      // Debug.Log("Esenca actual "   + SceneManager.GetActiveScene().name);
-      //  Debug.Log("Esenca actual "  + (EnumManager.Scenes.Level1));
-  
+        // Debug.Log("Esenca actual "   + SceneManager.GetActiveScene().name);
+        //  Debug.Log("Esenca actual "  + (EnumManager.Scenes.Level1));
+
+
+        if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
+        {
+            //  direction = new Vector3(movimientoHorizontal, 0.0f, movimientoVertical);
+            //  Debug.Log("Call lvl 2 movement");
+            Level2Movement();
+        }
        
         if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level1.ToString()))     
         {
@@ -72,20 +81,12 @@ public class PlayerBehaviour : MonoBehaviour
         }
         // si el nombre de la escena actual es equal a nivel 1
       //  Debug.Log($"Escena actual: {SceneManager.GetActiveScene().name}");
-        
+        Transform playerTransform = GetComponent<Transform>();
+        playerTransform.Translate(Vector2.right * Input.GetAxisRaw("Horizontal") * runSpeed * Time.deltaTime);
         
         Vector3 velocity  = direction * currentSpeed;       
     }
-    private void FixedUpdate()
-    {
-        if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
-        {
-            //  direction = new Vector3(movimientoHorizontal, 0.0f, movimientoVertical);
-            Debug.Log("Call lvl 2 movement");
-            Level2Movement();
-        }
-
-    }
+    
     void Level1Movement()
     {
       //  Debug.Log("Level1Movement");
@@ -121,24 +122,48 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (Input.GetAxis("Horizontal") == 0)
         {
-            return;
+          //  return;
         }
-        float movimientoHorizontal = Input.GetAxis("Horizontal");
-        float movimientoVertical = Input.GetAxis("Vertical");
-        Debug.Log("Fixed Update");
-        Debug.Log("Horizontal movement" + movimientoHorizontal);
-        rb.velocity = new Vector3(movimientoHorizontal, movimientoVertical, 0) * currentSpeed;
-        Debug.Log("Level 2 movement");
-     
+       
+        //float movimientoHorizontal = Input.GetAxis("Horizontal");
+     //  float movimientoVertical = Input.GetAxis("Vertical");
+        if(Input.GetKeyDown("a"))
+        {
+          //  Debug.Log("move left");
+            transform.eulerAngles = new Vector3(0, -180, 0);
+            rb.velocity = new Vector3(-rbSpeed, 0, 0);
+        }    
+        if(Input.GetKeyDown("d"))
+        {
+           // Debug.Log("move right");
+            rb.velocity = new Vector3(rbSpeed, 0, 0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }    
+        if (Input.GetKeyDown("w"))
+        {
+            //Debug.Log("move up");
+            rb.velocity = new Vector3(0, rbSpeed, 0);
+        }
+        if (Input.GetKeyDown("s"))
+        {
+           // Debug.Log("move down");
+            rb.velocity = new Vector3(0, -rbSpeed, 0);
+        }
+
+       // Debug.Log("Fixed Update");
+    //    Debug.Log("Horizontal movement" + movimientoHorizontal);
+        //rb.velocity = new Vector3(movimientoHorizontal, movimientoVertical, 0) * currentSpeed;
+       // Debug.Log("Level 2 movement");
+      
         if (currentSpeed == 0)
         {
-            movimientoHorizontal = 5;
-            movimientoVertical = 5; 
+           // movimientoHorizontal = 5;
+           // movimientoVertical = 5; 
         }
         if (currentSpeed != 0)
         {
-            movimientoHorizontal = 0;
-            movimientoVertical = 0;
+           // movimientoHorizontal = 0;
+          //  movimientoVertical = 0;
         }
         
       /*  if (Input.GetKey("d"))
@@ -163,7 +188,29 @@ public class PlayerBehaviour : MonoBehaviour
         }
       */
     } 
-   public void Level3Movement()
+   /*public void Level3Movement()
+    {
+        if (Input.GetKey("d"))
+        {
+            transform.position += new Vector3(1 * currentSpeed * Time.deltaTime, 0, 0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
+            Debug.Log("move");
+        }
+        if (Input.GetKey("a"))
+        {
+            transform.eulerAngles = new Vector3(0, -180, 0);
+            transform.position += new Vector3(-1 * currentSpeed * Time.deltaTime, 0, 0);
+        }
+        if (Input.GetKey("w"))
+        {
+            transform.position += new Vector3(0, 1 * currentSpeed * Time.deltaTime, 0);
+        }
+        if (Input.GetKey("s"))
+        {
+            transform.position += new Vector3(0, -1 * currentSpeed * Time.deltaTime, 0);
+        }
+    } */
+   public void Level4Movement()
     {
         if (Input.GetKey("d"))
         {
@@ -203,24 +250,24 @@ public class PlayerBehaviour : MonoBehaviour
           animator.SetTrigger(EnumManager.AnimatiorParameters.DanceTrigger.ToString());
            // level2SceneController.LoseSubmenu.gameObject.SetActive(true);
             yield return new WaitForSeconds(waitBeforeChangeScene);
-            
-          //  SceneManager.LoadScene(EnumManager.Scenes.Level2.ToString());
-          
+
+            //  SceneManager.LoadScene(EnumManager.Scenes.Level2.ToString());
+
+        }
+        if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
+        {
+            fruitCount = 199;
         }
         Grow();
         if (onGotFruit != null)
         {
             // mando la señal
                onGotFruit();
-            
+              
         }
         //Debug.Log("fruitCount = " + fruitCount);
     }    
-    public void NextLevelButton()
-    {
-        Debug.Log("next level 2");
-        SceneManager.LoadScene(EnumManager.Scenes.Level2.ToString());
-    }
+   
     public void MainMenuButton()
     {
         SceneManager.LoadScene(EnumManager.Scenes.MainMenu.ToString());        
@@ -228,7 +275,9 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void ContinueButton()
     {
-        SceneManager.LoadScene(EnumManager.Scenes.Level1.ToString());       
+        Debug.Log("DCONTINUE button ");
+        SceneManager.LoadScene(EnumManager.Scenes.Level1.ToString());  
+        
     }
     public void MainMenuButtonLose()
     {
@@ -242,11 +291,8 @@ public class PlayerBehaviour : MonoBehaviour
     {
         return currentSpeed;
     }
-   internal void SetSpeed(float _amount)
-    {
-        currentSpeed = _amount;
-    }
-    internal void ChangeSpeed( float _change)
+
+    internal void ChangeSpeed(float _change)
     {
         currentSpeed += _change;
     }
@@ -278,6 +324,7 @@ public class PlayerBehaviour : MonoBehaviour
         SceneManager.LoadScene(EnumManager.Scenes.SampleScene.ToString());
 
     }
+
     public void Grow()
     {
         transform.localScale += growFactor;

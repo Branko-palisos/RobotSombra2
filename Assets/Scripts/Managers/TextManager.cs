@@ -24,7 +24,7 @@ public class TextManager : MonoBehaviour
     }
     void Start()
     {
-        
+     
     }
 
     // Update is called once per frame

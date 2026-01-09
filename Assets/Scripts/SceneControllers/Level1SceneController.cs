@@ -11,6 +11,8 @@ public class Level1SceneController : SceneController
 
     [SerializeField]
     TextMeshProUGUI fruitCountTMP;
+    [SerializeField]
+    internal GameObject LoseSubmenu;
     // Start is called before the first frame update
 
     internal void UpdateFruitCountTMP()
@@ -18,6 +20,17 @@ public class Level1SceneController : SceneController
         Debug.Log("Update Fruit Count");
         fruitCountTMP.text = gameManager.fruitCount.ToString();
 
+    }
+    void CheckIfWin()
+    {
+      //  if (fruitCount > 99)
+        {
+        //    submenuManager.Win();
+         //   fruitCount = 99;                    
+         
+            //  SceneManager.LoadScene(EnumManager.Scenes.Level2.ToString());
+
+        }
     }
     // Update is called once per frame
     void Update()
@@ -32,4 +45,5 @@ public class Level1SceneController : SceneController
     {
         FruitBehaviour.onGetFruit -= UpdateFruitCountTMP;
     }
+    
 }

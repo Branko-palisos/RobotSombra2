@@ -14,7 +14,7 @@ public class SceneController : MonoBehaviour
     }
     
     // Update is called once per frame
-    protected void ChangeScene(EnumManager.Scenes _newScene)
+    internal void ChangeScene(EnumManager.Scenes _newScene)
     {
       SceneManager.LoadScene( _newScene.ToString());   
     }

@@ -8,7 +8,7 @@ public class LimitBehaviour : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         collision.gameObject.GetComponent<PlayerBehaviour>().Death();
-        Debug.Log("Lose");
-        Debug.Log("Win = 195");
+       // Debug.Log("Lose");
+      //  Debug.Log("Win = 195");
     }
 }

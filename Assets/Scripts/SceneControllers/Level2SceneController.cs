@@ -4,7 +4,7 @@
 using TMPro;
 using UnityEngine;
 
-public class Level2SceneController : MonoBehaviour
+public class Level2SceneController : SceneController
 {
     FruitBehaviour fruitBehaviour;  
     [SerializeField]
@@ -31,7 +31,7 @@ public class Level2SceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameManager.SetFruitCount(0); // for testing
+       
         if (gameManager.GetFruitCount() > fruitsToWin)
         {
             gameManager.DETAP.gameObject.SetActive(false);
@@ -45,10 +45,12 @@ public class Level2SceneController : MonoBehaviour
     void OnEnable()
     {
         FruitBehaviour.onGetFruit += UpdateFruitCountTMP;
+        PlayerBehaviour.onPlayerDeath += DeathReceptor;
     }
    
     void OnDisable()
     {
+        FruitBehaviour.onGetFruit -= UpdateFruitCountTMP;
         PlayerBehaviour.onPlayerDeath -= DeathReceptor;     
     }
 }

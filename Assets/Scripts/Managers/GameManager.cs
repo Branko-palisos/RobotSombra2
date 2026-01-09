@@ -39,7 +39,10 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        
+        if (!gameObject.activeSelf)
+        {
+            SceneManager.GetActiveScene();
+        }
     }
     
    
@@ -50,7 +53,7 @@ public class GameManager : MonoBehaviour
     internal void SetFruitCount(int _amount)
     {
         fruitCount = _amount;
-        Debug.Log($"FruitCount ={fruitCount}");
+     //   Debug.Log($"FruitCount ={fruitCount}");
     }
     internal void ChangeLastLevelCompleted(int _amount)
     {
@@ -62,6 +65,7 @@ public class GameManager : MonoBehaviour
     {
         return lastCompletedLevel;
     }
+    
     void OnEnable()
     {
        //PlayerBehaviour.onGotFruit += Level1SceneController.UpdateFruitCountTMP;

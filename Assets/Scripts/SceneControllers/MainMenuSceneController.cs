@@ -50,7 +50,15 @@ public class MainMenuSceneController : SceneController
          //   Debug.Log("Level 2");
         }
     }
-
+    public void Level3()
+    {
+        ChangeScene(EnumManager.Scenes.Level3);
+        
+    }    
+    public void Level4()
+    {
+        ChangeScene(EnumManager.Scenes.Level4);
+    }
    
     public void MainMenu()
     {

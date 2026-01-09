@@ -3,48 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\object\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\object\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\managers\\submenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\submenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\UnityTechnologies\\EffectExamples\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\UnityTechnologies\\EffectExamples\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|c:\\users\\brank\\onedrive\\unity\\robot sombra 2 git\\robotsombra2\\assets\\scripts\\object\\limitbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\object\\limitbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\scenecontrollers\\level2scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenecontrollers\\level2scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\scenecontrollers\\level1scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenecontrollers\\level1scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|c:\\users\\brank\\onedrive\\unity\\robot sombra 2 git\\robotsombra2\\assets\\scripts\\scenecontrollers\\level2scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenecontrollers\\level2scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|c:\\users\\brank\\onedrive\\unity\\robot sombra 2 git\\robotsombra2\\assets\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\object\\fruitbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\object\\fruitbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\player jump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player jump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\object\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\object\\playerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\scenecontrollers\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenecontrollers\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\object\\ufo behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\object\\ufo behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\settingsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\settingsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\managers\\submenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\submenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\object\\rocketbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\object\\rocketbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\object\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\object\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\scenecontrollers\\mainmenuscenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,20 +55,40 @@
       "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\enummanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\object\\limitbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\object\\limitbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\managers\\textmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\textmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\object\\fruitbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\object\\fruitbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\helpers\\levelbuttonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\helpers\\levelbuttonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\scenecontrollers\\levellogscenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenecontrollers\\levellogscenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\settingsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\settingsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\object\\rocketbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\object\\rocketbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\helpers\\levelbuttonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\helpers\\levelbuttonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\object\\ufo behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\object\\ufo behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\assets\\scripts\\ufo behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297C9B86-580D-B2C0-F82A-B3B45D1EE1C7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ufo behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,17 +98,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Level1SceneController.cs",
               "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\Level1SceneController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SceneControllers\\Level1SceneController.cs",
               "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\Level1SceneController.cs",
               "RelativeToolTip": "Assets\\Scripts\\SceneControllers\\Level1SceneController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T01:02:47.33Z",
               "IsPinned": true,
@@ -96,82 +116,214 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReadmeEditor.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\UnityTechnologies\\EffectExamples\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
-              "RelativeDocumentMoniker": "Assets\\UnityTechnologies\\EffectExamples\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\UnityTechnologies\\EffectExamples\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
-              "RelativeToolTip": "Assets\\UnityTechnologies\\EffectExamples\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADoAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "weapon.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\weapon.cs",
+              "RelativeDocumentMoniker": "Assets\\weapon.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\weapon.cs",
+              "RelativeToolTip": "Assets\\weapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T01:23:37.577Z",
+              "WhenOpened": "2026-01-08T20:02:52.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SceneController.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\SceneController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneControllers\\SceneController.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\SceneController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneControllers\\SceneController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T01:08:52.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SubmenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\SubmenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\SubmenuManager.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\SubmenuManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\SubmenuManager.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwEAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T01:11:51.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "PlayerBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\PlayerBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Object\\PlayerBehaviour.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\PlayerBehaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Object\\PlayerBehaviour.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAwwGcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:51:18.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainMenuSceneController.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\MainMenuSceneController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneControllers\\MainMenuSceneController.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\MainMenuSceneController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneControllers\\MainMenuSceneController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T01:41:09.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EnumManager.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\EnumManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\EnumManager.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\EnumManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\EnumManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T01:45:57.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SettingsMenu.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SettingsMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SettingsMenu.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SettingsMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SettingsMenu.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAmwDIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T00:33:59.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameManager.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\GameManager.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowEsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:16:40.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LimitBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\LimitBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Object\\LimitBehaviour.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\LimitBehaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Object\\LimitBehaviour.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T01:07:31.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TextManager.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\TextManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\TextManager.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\TextManager.cs*",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\TextManager.cs*",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:03:14.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Level2SceneController.cs",
               "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\Level2SceneController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SceneControllers\\Level2SceneController.cs",
               "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\Level2SceneController.cs",
               "RelativeToolTip": "Assets\\Scripts\\SceneControllers\\Level2SceneController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowDMAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T01:12:32.012Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UFO Behaviour.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\UFO Behaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Object\\UFO Behaviour.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\UFO Behaviour.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Object\\UFO Behaviour.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "bullet.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\bullet.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\bullet.cs",
+              "RelativeToolTip": "Assets\\bullet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T00:36:52.818Z"
+              "WhenOpened": "2026-01-08T20:30:24.742Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SceneController.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\SceneController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneControllers\\SceneController.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\SceneController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SceneControllers\\SceneController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Enemy.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T01:08:52.942Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RocketBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\RocketBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Object\\RocketBehaviour.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\RocketBehaviour.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Object\\RocketBehaviour.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T00:49:09.712Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\PlayerBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Object\\PlayerBehaviour.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\PlayerBehaviour.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Object\\PlayerBehaviour.cs",
-              "ViewState": "AgIAADkAAAAANDMzMzMiwFEAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T01:51:18.659Z",
+              "WhenOpened": "2026-01-08T20:36:19.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
+              "Title": "Player Jump.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Player Jump.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player Jump.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Player Jump.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player Jump.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T15:21:36.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FruitBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\FruitBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Object\\FruitBehaviour.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\FruitBehaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Object\\FruitBehaviour.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAMwCgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T00:34:51.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Object\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Object\\PlayerController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T15:29:17.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LevelButtonHelper.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Helpers\\LevelButtonHelper.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Helpers\\LevelButtonHelper.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Helpers\\LevelButtonHelper.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Helpers\\LevelButtonHelper.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAnwBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:43:32.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "LevelLogSceneController.cs",
               "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\LevelLogSceneController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SceneControllers\\LevelLogSceneController.cs",
@@ -183,133 +335,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TextManager.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\TextManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\TextManager.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\TextManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Managers\\TextManager.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwDIAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "UFO behaviour.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\UFO behaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UFO behaviour.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\UFO behaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UFO behaviour.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T01:03:14.179Z"
+              "WhenOpened": "2025-12-03T00:44:20.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameManager.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Managers\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "RocketBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\RocketBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Object\\RocketBehaviour.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\RocketBehaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Object\\RocketBehaviour.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T01:16:40.469Z"
+              "WhenOpened": "2025-11-14T00:49:09.712Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainMenuSceneController.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\MainMenuSceneController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneControllers\\MainMenuSceneController.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SceneControllers\\MainMenuSceneController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SceneControllers\\MainMenuSceneController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAIwDEAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "UFO Behaviour.cs",
+              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\UFO Behaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Object\\UFO Behaviour.cs",
+              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\UFO Behaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Object\\UFO Behaviour.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T01:41:09.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FruitBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\FruitBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Object\\FruitBehaviour.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\FruitBehaviour.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Object\\FruitBehaviour.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowB0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T00:34:51.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SubmenuManager.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\SubmenuManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\SubmenuManager.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\SubmenuManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Managers\\SubmenuManager.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowA4AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T01:11:51.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "LevelButtonHelper.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Helpers\\LevelButtonHelper.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Helpers\\LevelButtonHelper.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Helpers\\LevelButtonHelper.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Helpers\\LevelButtonHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T01:43:32.357Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EnumManager.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\EnumManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\EnumManager.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Managers\\EnumManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Managers\\EnumManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T01:45:57.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SettingsMenu.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SettingsMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SettingsMenu.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\SettingsMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SettingsMenu.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAowBoAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T00:33:59.733Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "40268075-ef29-41b5-828a-1d4122bb0a15",
-        "Display": 0,
-        "X": -64,
-        "Y": 17,
-        "Width": 1932,
-        "Height": 1035,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LimitBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\LimitBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Object\\LimitBehaviour.cs",
-              "ToolTip": "C:\\Users\\brank\\OneDrive\\Unity\\Robot sombra 2 git\\RobotSombra2\\Assets\\Scripts\\Object\\LimitBehaviour.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Object\\LimitBehaviour.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T01:27:28.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T00:36:52.818Z"
             }
           ]
         }
