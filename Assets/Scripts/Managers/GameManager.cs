@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
         if (gameManager == null)
         {
             gameManager = this;
+        //    Debug.Log("Soy game manager y ya me assigne");
         }
         else
         {
@@ -28,11 +29,6 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-      
-        if( gameManager == null)
-        {
-            gameManager = this;     
-        }
         // inmprimir nombre de la escena actual
         SceneManager.GetActiveScene();
         //Debug.Log(SceneManager.GetActiveScene().name);

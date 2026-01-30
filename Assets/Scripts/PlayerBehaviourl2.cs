@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class PlayerBehaviourl2 : PlayerBehaviour
+{
+    // Start is called before the first frame update
+    protected override void Start()
+    {
+        if (!SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
+        {
+
+            return;
+        }
+        Debug.Log("mover como Lv2 movement");
+    }
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

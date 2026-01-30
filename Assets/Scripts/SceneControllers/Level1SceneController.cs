@@ -8,12 +8,19 @@ using UnityEngine;
 
 public class Level1SceneController : SceneController
 {
-
+    internal delegate void OnWin();
+    internal static event OnWin onWin;
+    PlayerBehaviour playerBehaviour;
     [SerializeField]
     TextMeshProUGUI fruitCountTMP;
     [SerializeField]
     internal GameObject LoseSubmenu;
     // Start is called before the first frame update
+    protected override void Start()
+    {
+        base.Start();
+        playerBehaviour = FindObjectOfType<PlayerBehaviour>();
+    }
 
     internal void UpdateFruitCountTMP()
     {
@@ -23,14 +30,16 @@ public class Level1SceneController : SceneController
     }
     void CheckIfWin()
     {
-      //  if (fruitCount > 99)
+        if (playerBehaviour.FruitCount > 99)
         {
-        //    submenuManager.Win();
-         //   fruitCount = 99;                    
-         
-            //  SceneManager.LoadScene(EnumManager.Scenes.Level2.ToString());
-
+             submenuManager.Win();                             
+             ChangeScene(EnumManager.Scenes.Level2);
+            if (onWin != null)
+            {
+                onWin();
+            }
         }
+      
     }
     // Update is called once per frame
     void Update()
@@ -39,10 +48,12 @@ public class Level1SceneController : SceneController
     }
     void OnEnable()
     {
+        PlayerBehaviour.onGotFruit += CheckIfWin;
         FruitBehaviour.onGetFruit += UpdateFruitCountTMP;
     }
     void OnDisable()
     {
+        PlayerBehaviour.onGotFruit -= CheckIfWin;
         FruitBehaviour.onGetFruit -= UpdateFruitCountTMP;
     }
     

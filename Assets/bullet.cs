@@ -7,6 +7,8 @@ public class bullet : MonoBehaviour
     public float speed = 20f;
     public Rigidbody2D rb;
     public int damage = 40;
+    [SerializeField]
+    private GameObject impact;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,7 @@ public class bullet : MonoBehaviour
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
+            Instantiate(impact);
         }
         Debug.Log(hitInfo.name);
         Destroy(gameObject);

@@ -355,6 +355,8 @@
 "Assets/Scripts/Object/RocketBehaviour.cs"
 "Assets/Scripts/Object/UFO Behaviour.cs"
 "Assets/Scripts/Player Jump.cs"
+"Assets/Scripts/PlayerBehaviourl1.cs"
+"Assets/Scripts/PlayerBehaviourl2.cs"
 "Assets/Scripts/SceneControllers/Level1SceneController.cs"
 "Assets/Scripts/SceneControllers/Level2SceneController.cs"
 "Assets/Scripts/SceneControllers/Level3SceneController.cs"

@@ -38,10 +38,11 @@ public class PlayerBehaviour : MonoBehaviour
     private float rbSpeed = 30.0f;
     private int waitBeforeChangeScene = 3;
     private int fruitCount = 3;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private Vector3 direction;
     public float runSpeed;
-
+    [SerializeField]
+     int jump = 30;
     [SerializeField]
     GameObject LoseText;
     // Start is called before the first frame update
@@ -49,19 +50,25 @@ public class PlayerBehaviour : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
-    private void Start()
+    protected virtual void Start()
     {
         fruitCount = 95;
         submenuManager = SubmenuManager.submenuManager;
         currentSpeed = startspeed;
         rb = GetComponent<Rigidbody2D>();
-        Debug.Log($"{SceneManager.GetActiveScene().name}");
+       // Debug.Log($"{SceneManager.GetActiveScene().name}");
     }
-    void Update()
+    protected virtual void Update()
     {
+        Move();
+
+
         // Debug.Log("Esenca actual "   + SceneManager.GetActiveScene().name);
         //  Debug.Log("Esenca actual "  + (EnumManager.Scenes.Level1));
-
+        if(SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level4.ToString()))
+        {
+            Level4Movement();
+        }
 
         if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
         {
@@ -81,12 +88,16 @@ public class PlayerBehaviour : MonoBehaviour
         }
         // si el nombre de la escena actual es equal a nivel 1
       //  Debug.Log($"Escena actual: {SceneManager.GetActiveScene().name}");
-        Transform playerTransform = GetComponent<Transform>();
-        playerTransform.Translate(Vector2.right * Input.GetAxisRaw("Horizontal") * runSpeed * Time.deltaTime);
+     //   Transform playerTransform = GetComponent<Transform>();
+    //    playerTransform.Translate(Vector2.right * Input.GetAxisRaw("Horizontal") * runSpeed * Time.deltaTime);
         
         Vector3 velocity  = direction * currentSpeed;       
     }
-    
+    protected virtual void Move()
+    {
+        Debug.Log("mover base");
+
+    }
     void Level1Movement()
     {
       //  Debug.Log("Level1Movement");
@@ -210,64 +221,56 @@ public class PlayerBehaviour : MonoBehaviour
             transform.position += new Vector3(0, -1 * currentSpeed * Time.deltaTime, 0);
         }
     } */
-   public void Level4Movement()
+   private void Level4Movement()
     {
+        Debug.Log("Level4 Movement");
         if (Input.GetKey("d"))
         {
             transform.position += new Vector3(1 * currentSpeed * Time.deltaTime, 0, 0);
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            transform.eulerAngles = new Vector3(0, 180, 0);
             Debug.Log("move");
         }
         if (Input.GetKey("a"))
         {
-            transform.eulerAngles = new Vector3(0, -180, 0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
             transform.position += new Vector3(-1 * currentSpeed * Time.deltaTime, 0, 0);
         }
-        if (Input.GetKey("w"))
+        if (Input.GetKeyDown ("w"))
         {
-            transform.position += new Vector3(0, 1 * currentSpeed * Time.deltaTime, 0);
+            rb.AddForce(Vector3.up * jump);
         }
         if (Input.GetKey("s"))
         {
             transform.position += new Vector3(0, -1 * currentSpeed * Time.deltaTime, 0);
         }
+      
     }
     internal void GetFruit()
     {
-        StartCoroutine(GetFruitCR());
+  //      StartCoroutine(GetFruitCR());
     }
-   internal IEnumerator GetFruitCR()
-    {
-     // nos quedamos aqui 
-        fruitCount += 1;
-        if (fruitCount > 99)
-        {
-           submenuManager.Win();
-            fruitCount = 99;
-           // Debug.Log("Win");
-     //       FindObjectOfType<LevelLogSceneController>().ChangeLastLevelCompleted(1);
-            //SceneManager.LoadScene("Level 2");     
-          animator.SetTrigger(EnumManager.AnimatiorParameters.DanceTrigger.ToString());
-           // level2SceneController.LoseSubmenu.gameObject.SetActive(true);
-            yield return new WaitForSeconds(waitBeforeChangeScene);
-
-            //  SceneManager.LoadScene(EnumManager.Scenes.Level2.ToString());
-
-        }
-        if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
-        {
-            fruitCount = 199;
-        }
-        Grow();
-        if (onGotFruit != null)
-        {
+ //  internal IEnumerator GetFruitCR()
+   // {
+           
+     //   if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
+     //   {
+          //  fruitCount = 199;
+            //revisar si se accupa
+      //  }
+       // Grow();
+      //  if (onGotFruit != null)
+      //  {
             // mando la señal
-               onGotFruit();
+          //     onGotFruit();
               
-        }
+  //      }
         //Debug.Log("fruitCount = " + fruitCount);
-    }    
-   
+   // }    
+    void Win()
+    {
+        animator.SetTrigger(EnumManager.AnimatiorParameters.DanceTrigger.ToString());
+    }
+ 
     public void MainMenuButton()
     {
         SceneManager.LoadScene(EnumManager.Scenes.MainMenu.ToString());        
@@ -332,5 +335,20 @@ public class PlayerBehaviour : MonoBehaviour
         {
             transform.localScale = growLimit;
         }
+    }
+    internal int FruitCount
+    {
+        get
+        {
+            return fruitCount;
+        }
+    }
+    private void OnEnable()
+    {
+        Level1SceneController.onWin += Win;
+    }
+    private void OnDisable()
+    {
+        Level1SceneController.onWin -= Win;
     }
 }

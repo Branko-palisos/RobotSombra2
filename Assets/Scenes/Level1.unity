@@ -1385,6 +1385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruitCountTMP: {fileID: 699173855}
+  LoseSubmenu: {fileID: 1702999158}
 --- !u!4 &1326160822 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4764571250363706539, guid: 9e43641b283b0704c8ac8f317b9ee1b4, type: 3}
@@ -1536,6 +1537,11 @@ BoxCollider2D:
 --- !u!1 &1645633071 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 460703874979602863, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+  m_PrefabInstance: {fileID: 1205532336}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1702999158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1834966502845535784, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
   m_PrefabInstance: {fileID: 1205532336}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1829609056
@@ -2079,7 +2085,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1786828393028885059, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6622311026413283275}
   m_SourcePrefab: {fileID: 100100000, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
 --- !u!114 &6622311026413283265 stripped
 MonoBehaviour:
@@ -2097,6 +2106,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4283623462119466590, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
   m_PrefabInstance: {fileID: 6622311026413283264}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6622311026413283275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986194172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97de933327f80254d88de8bee92852e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevelButton: {fileID: 0}
+  level2SceneController: {fileID: 0}
+  gameOverTMP: {fileID: 0}
+  startspeed: 5
+  min: 0
+  max: 3
+  rbSpeed: 30
+  rb: {fileID: 0}
+  runSpeed: 0
+  jump: 30
+  LoseText: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
