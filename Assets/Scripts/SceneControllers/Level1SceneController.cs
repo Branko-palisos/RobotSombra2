@@ -4,6 +4,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 
 public class Level1SceneController : SceneController
@@ -17,14 +18,18 @@ public class Level1SceneController : SceneController
     internal GameObject LoseSubmenu;
     // Start is called before the first frame update
     protected override void Start()
-    {
+    { 
         base.Start();
+        // cambiar numbero de frutas
+        gameManager.SetFruitCount(gameManager.GetFruitCount() + 95);
+        //actualizar el TMP
+        UpdateFruitCountTMP();
         playerBehaviour = FindObjectOfType<PlayerBehaviour>();
     }
 
     internal void UpdateFruitCountTMP()
     {
-        Debug.Log("Update Fruit Count");
+        Debug.Log($"Update Fruit Count = {gameManager.fruitCount }");
         fruitCountTMP.text = gameManager.fruitCount.ToString();
 
     }

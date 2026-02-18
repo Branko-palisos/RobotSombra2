@@ -1087,6 +1087,29 @@ MonoBehaviour:
   runSpeed: 0
   jump: 30
   LoseText: {fileID: 0}
+--- !u!114 &1801097246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801097238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376c86fd5b75774e851eed8943d646d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevelButton: {fileID: 0}
+  level2SceneController: {fileID: 0}
+  gameOverTMP: {fileID: 0}
+  startspeed: 5
+  min: 0
+  max: 3
+  rbSpeed: 30
+  rb: {fileID: 0}
+  runSpeed: 0
+  jump: 30
+  LoseText: {fileID: 0}
 --- !u!1 &1853047865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,6 +1514,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1786828393028885059, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1801097245}
+    - targetCorrespondingSourceObject: {fileID: 1786828393028885059, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1801097246}
   m_SourcePrefab: {fileID: 100100000, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
 --- !u!1 &2075863044
 GameObject:

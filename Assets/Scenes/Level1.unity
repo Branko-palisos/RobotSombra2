@@ -1306,6 +1306,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3067782654828729342, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: m_text
+      value: 00
+      objectReference: {fileID: 0}
     - target: {fileID: 4630140330451541940, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
       propertyPath: m_Name
       value: Submenu Manager
@@ -1597,11 +1601,11 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00
+  m_text: 95
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1877,11 +1881,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1062391680406238809, guid: d6ffeb3a07e35544c84102e7fd65db18, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -120.2
+      value: -91.2
       objectReference: {fileID: 0}
     - target: {fileID: 1062391680406238809, guid: d6ffeb3a07e35544c84102e7fd65db18, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 103.8
+      value: 154.5
       objectReference: {fileID: 0}
     - target: {fileID: 1062391680406238809, guid: d6ffeb3a07e35544c84102e7fd65db18, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1993,6 +1997,10 @@ PrefabInstance:
     - target: {fileID: 1786828393028885059, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
       propertyPath: m_Name
       value: Sharky
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786828393028885059, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4283623462119466590, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
       propertyPath: m_LocalPosition.x

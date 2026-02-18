@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 
 public class PlayerBehaviourl2 : PlayerBehaviour
@@ -13,13 +14,23 @@ public class PlayerBehaviourl2 : PlayerBehaviour
 
             return;
         }
+
+
+    }
+    protected override void Update() { 
+       if (!SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
+        {
+
+            return;
+        }
+        base.Update();
+    }
+
+    
+    protected override void Move()
+    {
         Debug.Log("mover como Lv2 movement");
     }
-
-
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

@@ -1,14 +1,16 @@
-﻿// terminamos clean code
-using System.Collections;
+﻿// haciendo clean code
+//using Unity.VisualScripting;
 //using System.Collections.Generic;
 //using System.Data.Common;
-using TMPro;
-//using Unity.VisualScripting;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using static EnumManager;
 //using UnityEngine.UI;
 //using static UnityEngine.RuleTile.TilingRuleOutput;
+//using static EnumManager;
+using System.Collections;
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+
 public class PlayerBehaviour : MonoBehaviour
 {
     SubmenuManager submenuManager;
@@ -17,16 +19,17 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField]
     Level2SceneController level2SceneController;
     [SerializeField]    
-    private TextMeshProUGUI gameOverTMP;
+   private TextMeshProUGUI gameOverTMP;
     internal delegate void OnGotFruit();
     internal static event OnGotFruit onGotFruit;
     internal delegate void OnPlayerDeath();
     internal static event OnPlayerDeath onPlayerDeath;
     private GameManager gameManager;
     [SerializeField]
-     float startspeed = 5.0f;
-     float currentSpeed;
-     float highSpeed = 8.0f;
+   protected  float startspeed = 5.0f;
+    [SerializeField]    
+    protected float currentSpeed;
+    protected float highSpeed = 8.0f;
     Vector3 growFactor = new Vector3(0.1f, 0.1f, 0.1f);
     private Vector3 growLimit = new Vector3(2, 2, 2);
     private Animator animator;
@@ -37,7 +40,6 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField]
     private float rbSpeed = 30.0f;
     private int waitBeforeChangeScene = 3;
-    private int fruitCount = 3;
     public Rigidbody2D rb;
     private Vector3 direction;
     public float runSpeed;
@@ -48,14 +50,17 @@ public class PlayerBehaviour : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
+        Debug.Log("Awake");
         animator = GetComponent<Animator>();
+        submenuManager = SubmenuManager.submenuManager;
+        rb = GetComponent<Rigidbody2D>();
     }
     protected virtual void Start()
     {
-        fruitCount = 95;
-        submenuManager = SubmenuManager.submenuManager;
-        currentSpeed = startspeed;
-        rb = GetComponent<Rigidbody2D>();
+       
+       
+       // currentSpeed = startspeed;
+       Awake(); 
        // Debug.Log($"{SceneManager.GetActiveScene().name}");
     }
     protected virtual void Update()
@@ -68,6 +73,7 @@ public class PlayerBehaviour : MonoBehaviour
         if(SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level4.ToString()))
         {
             Level4Movement();
+            
         }
 
         if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
@@ -77,15 +83,6 @@ public class PlayerBehaviour : MonoBehaviour
             Level2Movement();
         }
        
-        if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level1.ToString()))     
-        {
-            Level1Movement();
-       //     Debug.Log("Level 1");            
-            //fruitCount = 3;       
-       //     Debug.Log("Win");    
-          //  animator.SetTrigger(EnumManager.AnimatiorParameters.DanceTrigger.ToString());
-       //     SceneManager.LoadScene(EnumManager.Scenes.Level2.ToString());
-        }
         // si el nombre de la escena actual es equal a nivel 1
       //  Debug.Log($"Escena actual: {SceneManager.GetActiveScene().name}");
      //   Transform playerTransform = GetComponent<Transform>();
@@ -98,37 +95,7 @@ public class PlayerBehaviour : MonoBehaviour
         Debug.Log("mover base");
 
     }
-    void Level1Movement()
-    {
-      //  Debug.Log("Level1Movement");
-        if (Input.GetKey("d"))
-        {
-            transform.position += new Vector3(1 * currentSpeed * Time.deltaTime, 0, 0);
-            transform.eulerAngles = new Vector3(0, 0, 0);
-            //  Debug.Log("move");           
-        }
-        if (Input.GetKey("a"))
-        {
-            transform.eulerAngles = new Vector3(0, -180, 0);
-            transform.position += new Vector3(-1 * currentSpeed * Time.deltaTime, 0, 0);            
-        }
-        if (Input.GetKey("w"))
-        {
-            transform.position += new Vector3(0, 1 * currentSpeed * Time.deltaTime, 0);          
-        }
-        if (Input.GetKey("s"))
-        {
-            transform.position += new Vector3(0, -1 * currentSpeed * Time.deltaTime, 0);        
-        }
-        if (Input.GetKeyDown("z"))
-        {
-            currentSpeed = highSpeed;
-        }
-        if (Input.GetKeyUp("z"))
-        {
-            currentSpeed = startspeed;
-        }
-    }
+   
     void Level2Movement()
     {
         if (Input.GetAxis("Horizontal") == 0)
@@ -226,6 +193,7 @@ public class PlayerBehaviour : MonoBehaviour
         Debug.Log("Level4 Movement");
         if (Input.GetKey("d"))
         {
+            Debug.Log("UNERSY current speed");
             transform.position += new Vector3(1 * currentSpeed * Time.deltaTime, 0, 0);
             transform.eulerAngles = new Vector3(0, 180, 0);
             Debug.Log("move");
@@ -243,7 +211,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             transform.position += new Vector3(0, -1 * currentSpeed * Time.deltaTime, 0);
         }
-      
+        Debug.Log("UNERSY Level 4");
     }
     internal void GetFruit()
     {
@@ -312,12 +280,12 @@ public class PlayerBehaviour : MonoBehaviour
 
             onPlayerDeath();
         }
-        //   gameOverTMP.text = EnumManager.Generator.losingText.ToString();
+     //      gameOverTMP.text = EnumManager.Generator.losingText.ToString();
         int losingTextIndex = Random.Range(min,max);
         Debug.Log("losing text index "+ losingTextIndex);
         EnumManager.Generator losingText = (EnumManager.Generator)losingTextIndex;
        string  losingTextModifyied = losingText.ToString().Replace("_", " ");
-        gameOverTMP.text = losingTextModifyied.ToString();
+       gameOverTMP.text = losingTextModifyied.ToString();
         submenuManager.Lose();
       //  Random.Range(min, max);
         GetComponent<SpriteRenderer>().enabled = false;
@@ -340,7 +308,11 @@ public class PlayerBehaviour : MonoBehaviour
     {
         get
         {
-            return fruitCount;
+            return gameManager.fruitCount;
+        }
+        set
+        {
+            gameManager.fruitCount = value;
         }
     }
     private void OnEnable()

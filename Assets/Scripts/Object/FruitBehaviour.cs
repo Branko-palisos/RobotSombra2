@@ -22,9 +22,9 @@ public class FruitBehaviour : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-       
+
         Debug.Log("CollidedWith =  " + collision.gameObject.name);
-        gameManager.SetFruitCount(gameManager.GetFruitCount() + 1);
+
         if (onGetFruit != null)
         {
             //Debug.Log("Send signal");
@@ -33,13 +33,18 @@ public class FruitBehaviour : MonoBehaviour
 
         }
         // sharky.GetComponent<PlayerBehaviour>().GetFruit();
-        playerBehaviour = collision.gameObject.GetComponent<PlayerBehaviour>();     
+        playerBehaviour = collision.gameObject.GetComponent<PlayerBehaviour>();
         playerBehaviour.GetFruit();
         gameObject.SetActive(false);
 
         transform.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), 0);
         gameObject.SetActive(true);
 
+        if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level1.ToString()))
+        {
+            gameManager.fruitCount += 1;
+            Debug.Log("FruitCount");
+        }
         if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2))
         {
 
@@ -50,11 +55,8 @@ public class FruitBehaviour : MonoBehaviour
 
         }
         //      if (playerBehaviour.fruitCount == 3.0f )
-     //   if (gameManager.GetFruitCount() == 3.0f )
-        {
+        //   if (gameManager.GetFruitCount() == 3.0f )
 
-           // Debug.Log("Win");
-        }
         // if(gameManager.GetFruitCount() == 99.0f)
         {
             // submenuManager.Win();

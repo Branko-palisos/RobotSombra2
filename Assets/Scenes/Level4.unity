@@ -356,6 +356,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9ac4e73d40fe164ca238796b2ff9288, type: 3}
+--- !u!1 &380926674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8261493826646305875, guid: d6bc2f1bf38f9df4c8f4a3a09b30ef96, type: 3}
+  m_PrefabInstance: {fileID: 1521201339024217226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &770256451 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6799044467799448717, guid: f9ac4e73d40fe164ca238796b2ff9288, type: 3}
@@ -1396,6 +1401,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firepoint: {fileID: 1941411620}
   bulletPrefab: {fileID: 1269392378065695779, guid: d6bc2f1bf38f9df4c8f4a3a09b30ef96, type: 3}
+  damage: 40
+  impactEffect: {fileID: 380926674}
 --- !u!50 &1540326283 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 8238706370146015908, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
@@ -1417,6 +1424,7 @@ MonoBehaviour:
   level2SceneController: {fileID: 0}
   gameOverTMP: {fileID: 0}
   startspeed: 5
+  currentSpeed: 0
   min: 0
   max: 3
   rbSpeed: 30
@@ -1590,6 +1598,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48, y: 0.48}
   m_EdgeRadius: 0
+--- !u!4 &1821649782 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1873380206971192750, guid: d6bc2f1bf38f9df4c8f4a3a09b30ef96, type: 3}
+  m_PrefabInstance: {fileID: 1521201339024217226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1889204068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,6 +2112,10 @@ PrefabInstance:
       propertyPath: runSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6773742702032272529, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
+      propertyPath: currentSpeed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8238706370146015908, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
       propertyPath: m_GravityScale
       value: 2
@@ -2109,6 +2126,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4283623462119466590, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2115376859}
+    - targetCorrespondingSourceObject: {fileID: 4283623462119466590, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1821649782}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1786828393028885059, guid: b9b0c669d9219794e8f258e7286daa8e, type: 3}
       insertIndex: -1
@@ -2361,7 +2381,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1540326267}
     m_Modifications:
     - target: {fileID: 1269392378065695779, guid: d6bc2f1bf38f9df4c8f4a3a09b30ef96, type: 3}
       propertyPath: m_Name
@@ -2369,11 +2389,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1873380206971192750, guid: d6bc2f1bf38f9df4c8f4a3a09b30ef96, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.1932
+      value: -1.2667999
       objectReference: {fileID: 0}
     - target: {fileID: 1873380206971192750, guid: d6bc2f1bf38f9df4c8f4a3a09b30ef96, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.8273
+      value: 0.3627001
       objectReference: {fileID: 0}
     - target: {fileID: 1873380206971192750, guid: d6bc2f1bf38f9df4c8f4a3a09b30ef96, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2381,19 +2401,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1873380206971192750, guid: d6bc2f1bf38f9df4c8f4a3a09b30ef96, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1873380206971192750, guid: d6bc2f1bf38f9df4c8f4a3a09b30ef96, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1873380206971192750, guid: d6bc2f1bf38f9df4c8f4a3a09b30ef96, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1873380206971192750, guid: d6bc2f1bf38f9df4c8f4a3a09b30ef96, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1873380206971192750, guid: d6bc2f1bf38f9df4c8f4a3a09b30ef96, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2419,7 +2439,6 @@ SceneRoots:
   - {fileID: 1532494097}
   - {fileID: 2017894797}
   - {fileID: 16481951}
-  - {fileID: 1521201339024217226}
   - {fileID: 1281374761}
   - {fileID: 1889204070}
   - {fileID: 2067931088}
