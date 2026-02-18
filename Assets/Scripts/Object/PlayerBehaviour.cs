@@ -13,13 +13,13 @@ using UnityEngine.SceneManagement;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+    
     SubmenuManager submenuManager;
     [SerializeField]
      GameObject nextLevelButton;
     [SerializeField]
     Level2SceneController level2SceneController;
-    [SerializeField]    
-   private TextMeshProUGUI gameOverTMP;
+  
     internal delegate void OnGotFruit();
     internal static event OnGotFruit onGotFruit;
     internal delegate void OnPlayerDeath();
@@ -33,10 +33,7 @@ public class PlayerBehaviour : MonoBehaviour
     Vector3 growFactor = new Vector3(0.1f, 0.1f, 0.1f);
     private Vector3 growLimit = new Vector3(2, 2, 2);
     private Animator animator;
-    [SerializeField]
-    private int min = 0;
-    [SerializeField]    
-    private int max = 3;
+   
     [SerializeField]
     private float rbSpeed = 30.0f;
     private int waitBeforeChangeScene = 3;
@@ -45,8 +42,7 @@ public class PlayerBehaviour : MonoBehaviour
     public float runSpeed;
     [SerializeField]
      int jump = 30;
-    [SerializeField]
-    GameObject LoseText;
+ 
     // Start is called before the first frame update
     private void Awake()
     {
@@ -67,7 +63,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         Move();
 
-
+        
         // Debug.Log("Esenca actual "   + SceneManager.GetActiveScene().name);
         //  Debug.Log("Esenca actual "  + (EnumManager.Scenes.Level1));
         if(SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level4.ToString()))
@@ -75,20 +71,21 @@ public class PlayerBehaviour : MonoBehaviour
             Level4Movement();
             
         }
-
+       
         if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
         {
             //  direction = new Vector3(movimientoHorizontal, 0.0f, movimientoVertical);
             //  Debug.Log("Call lvl 2 movement");
             Level2Movement();
         }
-       
+
         // si el nombre de la escena actual es equal a nivel 1
-      //  Debug.Log($"Escena actual: {SceneManager.GetActiveScene().name}");
-     //   Transform playerTransform = GetComponent<Transform>();
-    //    playerTransform.Translate(Vector2.right * Input.GetAxisRaw("Horizontal") * runSpeed * Time.deltaTime);
-        
-        Vector3 velocity  = direction * currentSpeed;       
+        //  Debug.Log($"Escena actual: {SceneManager.GetActiveScene().name}");
+        //   Transform playerTransform = GetComponent<Transform>();
+        //    playerTransform.Translate(Vector2.right * Input.GetAxisRaw("Horizontal") * runSpeed * Time.deltaTime);
+
+        Vector3 velocity  = direction * currentSpeed;
+       
     }
     protected virtual void Move()
     {
@@ -109,7 +106,8 @@ public class PlayerBehaviour : MonoBehaviour
         {
           //  Debug.Log("move left");
             transform.eulerAngles = new Vector3(0, -180, 0);
-            rb.velocity = new Vector3(-rbSpeed, 0, 0);
+           rb.velocity = new Vector3(-rbSpeed, 0, 0);
+            Debug.Log($"rbSpeed{rbSpeed}");
         }    
         if(Input.GetKeyDown("d"))
         {
@@ -281,11 +279,9 @@ public class PlayerBehaviour : MonoBehaviour
             onPlayerDeath();
         }
      //      gameOverTMP.text = EnumManager.Generator.losingText.ToString();
-        int losingTextIndex = Random.Range(min,max);
-        Debug.Log("losing text index "+ losingTextIndex);
-        EnumManager.Generator losingText = (EnumManager.Generator)losingTextIndex;
-       string  losingTextModifyied = losingText.ToString().Replace("_", " ");
-       gameOverTMP.text = losingTextModifyied.ToString();
+        
+       // Debug.Log("losing text index "+ losingTextIndex);
+      
         submenuManager.Lose();
       //  Random.Range(min, max);
         GetComponent<SpriteRenderer>().enabled = false;

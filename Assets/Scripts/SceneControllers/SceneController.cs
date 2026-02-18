@@ -14,7 +14,7 @@ public class SceneController : MonoBehaviour
         submenuManager = SubmenuManager.submenuManager;
     //    Debug.Log("Asignar game manager");
     }
-    
+   
     // Update is called once per frame
     internal void ChangeScene(EnumManager.Scenes _newScene)
     {
