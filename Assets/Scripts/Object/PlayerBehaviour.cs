@@ -13,7 +13,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    
+
+    public int health = 100;
     SubmenuManager submenuManager;
     [SerializeField]
      GameObject nextLevelButton;
@@ -71,7 +72,11 @@ public class PlayerBehaviour : MonoBehaviour
             Level4Movement();
             
         }
-       
+        if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.BossFight.ToString()))
+        {
+            Level5Movement();
+
+        }
         if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
         {
             //  direction = new Vector3(movimientoHorizontal, 0.0f, movimientoVertical);
@@ -211,6 +216,34 @@ public class PlayerBehaviour : MonoBehaviour
         }
         Debug.Log("UNERSY Level 4");
     }
+    private void Level5Movement()
+    {
+        Debug.Log("Level4 Movement");
+        if (Input.GetKeyDown("a"))
+        {
+            //  Debug.Log("move left");
+            transform.eulerAngles = new Vector3(0, -180, 0);
+            rb.velocity = new Vector3(-rbSpeed, 0, 0);
+            Debug.Log($"rbSpeed{rbSpeed}");
+        }
+        if (Input.GetKeyDown("d"))
+        {
+            // Debug.Log("move right");
+            rb.velocity = new Vector3(rbSpeed, 0, 0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+        if (Input.GetKeyDown("w"))
+        {
+            //Debug.Log("move up");
+            rb.velocity = new Vector3(0, rbSpeed, 0);
+        }
+        if (Input.GetKeyDown("s"))
+        {
+            // Debug.Log("move down");
+            rb.velocity = new Vector3(0, -rbSpeed, 0);
+        }
+        Debug.Log("UNERSY Level 4");
+    }
     internal void GetFruit()
     {
   //      StartCoroutine(GetFruitCR());
@@ -242,12 +275,7 @@ public class PlayerBehaviour : MonoBehaviour
         SceneManager.LoadScene(EnumManager.Scenes.MainMenu.ToString());        
     }
 
-    public void ContinueButton()
-    {
-        Debug.Log("DCONTINUE button ");
-        SceneManager.LoadScene(EnumManager.Scenes.Level1.ToString());  
-        
-    }
+ 
     public void MainMenuButtonLose()
     {
         SceneManager.LoadScene(EnumManager.Scenes.MainMenu.ToString());
@@ -282,7 +310,7 @@ public class PlayerBehaviour : MonoBehaviour
         
        // Debug.Log("losing text index "+ losingTextIndex);
       
-        submenuManager.Lose();
+       // submenuManager.Lose();
       //  Random.Range(min, max);
         GetComponent<SpriteRenderer>().enabled = false;
         animator.SetTrigger(EnumManager.AnimatiorParameters.Fade.ToString());
@@ -290,15 +318,6 @@ public class PlayerBehaviour : MonoBehaviour
         yield return new WaitForSeconds(waitBeforeChangeScene);
         SceneManager.LoadScene(EnumManager.Scenes.SampleScene.ToString());
 
-    }
-
-    public void Grow()
-    {
-        transform.localScale += growFactor;
-        if (transform.localScale.x > 2)
-        {
-            transform.localScale = growLimit;
-        }
     }
     internal int FruitCount
     {
@@ -313,10 +332,23 @@ public class PlayerBehaviour : MonoBehaviour
     }
     private void OnEnable()
     {
+       
         Level1SceneController.onWin += Win;
     }
     private void OnDisable()
     {
         Level1SceneController.onWin -= Win;
+    }
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

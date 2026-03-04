@@ -14,8 +14,7 @@ public class Level1SceneController : SceneController
     PlayerBehaviour playerBehaviour;
     [SerializeField]
     TextMeshProUGUI fruitCountTMP;
-    [SerializeField]
-    internal GameObject LoseSubmenu;
+   
     // Start is called before the first frame update
     protected override void Start()
     { 

@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
-{
-   protected GameManager gameManager;
-   protected SubmenuManager submenuManager;
+{   
+    protected GameManager gameManager;
+    protected SubmenuManager submenuManager;
+    [SerializeField]
+    TextMeshProUGUI Lv2FruitCount;
+    // cambiar a general para todos los niveles
     // Start is called before the first frame update
     protected virtual void Start()
     {
         gameManager = GameManager.gameManager;
         submenuManager = SubmenuManager.submenuManager;
+       
     //    Debug.Log("Asignar game manager");
     }
    
@@ -20,4 +25,26 @@ public class SceneController : MonoBehaviour
     {
       SceneManager.LoadScene( _newScene.ToString());   
     }
+    void DeathReceptor()
+    {
+        submenuManager.Lose();      
+    }
+    internal void UpdateFruitCountTMP()
+    {
+        Debug.Log("Update Fruit Count");
+        Lv2FruitCount.text = gameManager.fruitCount.ToString();
+
+    }
+    void OnEnable()
+    {
+        FruitBehaviour.onGetFruit += UpdateFruitCountTMP;
+        PlayerBehaviour.onPlayerDeath += DeathReceptor;
+    }
+
+    void OnDisable()
+    {
+        FruitBehaviour.onGetFruit -= UpdateFruitCountTMP;
+        PlayerBehaviour.onPlayerDeath -= DeathReceptor;
+    }
+
 }

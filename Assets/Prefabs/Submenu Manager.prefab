@@ -1003,7 +1003,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2441732411600751704
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1039,8 +1039,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7bae01096fe924cb8e4414fdbc8361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverTMP: {fileID: 0}
   winSubmenu: {fileID: 1530033270680464468}
   loseSubmenu: {fileID: 1834966502845535784}
+  sceneController: {fileID: 0}
 --- !u!223 &5871922758993061406
 Canvas:
   m_ObjectHideFlags: 0

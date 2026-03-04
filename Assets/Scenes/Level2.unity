@@ -131,12 +131,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1244690078858406106, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: gameOverTMP
+      value: 
+      objectReference: {fileID: 180469098}
+    - target: {fileID: 1244690078858406106, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: loseSubmenu
+      value: 
+      objectReference: {fileID: 2139517537}
+    - target: {fileID: 1244690078858406106, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
       propertyPath: sceneController
       value: 
       objectReference: {fileID: 2075863046}
     - target: {fileID: 1834966502845535784, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2441732411600751704, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
       propertyPath: m_Pivot.x
@@ -222,14 +230,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Submenu Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7030321879566534136, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1244690078858406106, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+    - target: {fileID: 7030321879566534136, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030321879566534136, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SubmenuManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
---- !u!114 &180469095 stripped
+--- !u!114 &180469098 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5261388266690361356, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6528890280782580133, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
   m_PrefabInstance: {fileID: 180469094}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -238,11 +258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &180469096 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2308333888474752309, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
-  m_PrefabInstance: {fileID: 180469094}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &206210991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,18 +1389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d6d9eb922cbe9448c0bc27a3f0a331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: {fileID: 2085744654}
-  LoseSubmenu: {fileID: 2085744654}
   Lv2FruitCount: {fileID: 377539093}
-  LoseText: {fileID: 180469096}
-  gameOverTMP: {fileID: 180469095}
-  min: 0
-  max: 3
---- !u!1 &2085744654 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1834966502845535784, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
-  m_PrefabInstance: {fileID: 180469094}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2139517537
 GameObject:
   m_ObjectHideFlags: 0

@@ -286,16 +286,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Submenu Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7030321879566534136, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1244690078858406106, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+    - target: {fileID: 7030321879566534136, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ContinueButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030321879566534136, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SubmenuManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
---- !u!1 &559772688 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1834966502845535784, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
-  m_PrefabInstance: {fileID: 559772687}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &645571689
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe784119c45259d4bb55d091026e0794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoseSubmenu: {fileID: 559772688}
+  Lv2FruitCount: {fileID: 0}
+  LoseSubmenu: {fileID: 1727467291}
 --- !u!1 &1109275206
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,6 +615,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1727467291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4630140330451541940, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+  m_PrefabInstance: {fileID: 559772687}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2096574224
 GameObject:
   m_ObjectHideFlags: 0
