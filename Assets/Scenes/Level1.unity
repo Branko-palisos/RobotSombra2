@@ -1178,9 +1178,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Submenu Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 4630140330451541940, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6528890280782580133, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
       propertyPath: m_text
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030321879566534136, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1244690078858406106, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+    - target: {fileID: 7030321879566534136, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ContinueButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030321879566534136, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SubmenuManager, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1257,6 +1273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2b196554ad43864f99ce1dd17778f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  submenuManager: {fileID: 0}
   Lv2FruitCount: {fileID: 0}
   fruitCountTMP: {fileID: 699173855}
 --- !u!4 &1326160822 stripped
@@ -1990,6 +2008,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97de933327f80254d88de8bee92852e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 7
+  explosion: {fileID: 0}
+  rotateSpeed: 200
+  explosionEffect: {fileID: 0}
   health: 100
   nextLevelButton: {fileID: 0}
   level2SceneController: {fileID: 0}

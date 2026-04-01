@@ -33,7 +33,7 @@ public class PlayerBehaviourl1 : PlayerBehaviour
     }
     protected override void Move()
     {
-        Debug.Log("mover como Lv1 movement");
+      //  Debug.Log("mover como Lv1 movement");
         //  Debug.Log("Level1Movement");
         if (Input.GetKey("d"))
         {

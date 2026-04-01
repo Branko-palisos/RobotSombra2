@@ -137,14 +137,14 @@ PrefabInstance:
     - target: {fileID: 1244690078858406106, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
       propertyPath: loseSubmenu
       value: 
-      objectReference: {fileID: 2139517537}
+      objectReference: {fileID: 1001757652}
     - target: {fileID: 1244690078858406106, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
       propertyPath: sceneController
       value: 
       objectReference: {fileID: 2075863046}
     - target: {fileID: 1834966502845535784, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2441732411600751704, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
       propertyPath: m_Pivot.x
@@ -230,13 +230,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Submenu Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 4630140330451541940, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7030321879566534136, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1244690078858406106, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
     - target: {fileID: 7030321879566534136, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Test
+      value: ContinueButton
       objectReference: {fileID: 0}
     - target: {fileID: 7030321879566534136, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -842,6 +846,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1001757652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1834966502845535784, guid: d4fdcf5a255036e4581ffd77caad522e, type: 3}
+  m_PrefabInstance: {fileID: 180469094}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1023083147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,7 +1398,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d6d9eb922cbe9448c0bc27a3f0a331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  submenuManager: {fileID: 0}
   Lv2FruitCount: {fileID: 377539093}
+  fruitCountTMP: {fileID: 377539093}
 --- !u!1 &2139517537
 GameObject:
   m_ObjectHideFlags: 0

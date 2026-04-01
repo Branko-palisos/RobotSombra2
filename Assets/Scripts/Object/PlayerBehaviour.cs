@@ -9,11 +9,16 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.GraphicsBuffer;
 
-
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerBehaviour : MonoBehaviour
 {
-
+    public Transform target;
+    public float speed = 7.0f;
+    public GameObject explosion;
+    public float rotateSpeed = 200.0f;
+    public GameObject explosionEffect;
     public int health = 100;
     SubmenuManager submenuManager;
     [SerializeField]
@@ -47,9 +52,9 @@ public class PlayerBehaviour : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        Debug.Log("Awake");
+      //  Debug.Log("Awake");
         animator = GetComponent<Animator>();
-        submenuManager = SubmenuManager.submenuManager;
+        //submenuManager = SubmenuManager.submenuManager;
         rb = GetComponent<Rigidbody2D>();
     }
     protected virtual void Start()
@@ -75,6 +80,22 @@ public class PlayerBehaviour : MonoBehaviour
         if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.BossFight.ToString()))
         {
             Level5Movement();
+            void FixedUpdate()
+            {
+                Vector2 direction = (Vector2)target.position - rb.position;
+                direction.Normalize();
+                float rotateAmount = Vector3.Cross(direction, transform.up).z;
+                rb.angularVelocity = -rotateAmount * rotateSpeed;
+                rb.velocity = transform.up * speed;
+
+            }
+            void OnTriggerEnter2D()
+            {
+                explosion.SetActive(true);
+                Instantiate(explosionEffect, transform.position, transform.rotation);
+                Destroy(gameObject);
+                Debug.Log("Explosion");
+            }
 
         }
         if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
@@ -90,11 +111,11 @@ public class PlayerBehaviour : MonoBehaviour
         //    playerTransform.Translate(Vector2.right * Input.GetAxisRaw("Horizontal") * runSpeed * Time.deltaTime);
 
         Vector3 velocity  = direction * currentSpeed;
-       
+        
     }
     protected virtual void Move()
     {
-        Debug.Log("mover base");
+       // Debug.Log("mover base");
 
     }
    
@@ -265,7 +286,7 @@ public class PlayerBehaviour : MonoBehaviour
   //      }
         //Debug.Log("fruitCount = " + fruitCount);
    // }    
-    void Win()
+   internal void Win()
     {
         animator.SetTrigger(EnumManager.AnimatiorParameters.DanceTrigger.ToString());
     }
@@ -303,20 +324,20 @@ public class PlayerBehaviour : MonoBehaviour
         Destroy(gameObject);
         if (onPlayerDeath != null)
         {
-
+           
             onPlayerDeath();
         }
-     //      gameOverTMP.text = EnumManager.Generator.losingText.ToString();
+        //      gameOverTMP.text = EnumManager.Generator.losingText.ToString();
+
+        // Debug.Log("losing text index "+ losingTextIndex);
         
-       // Debug.Log("losing text index "+ losingTextIndex);
-      
        // submenuManager.Lose();
       //  Random.Range(min, max);
         GetComponent<SpriteRenderer>().enabled = false;
         animator.SetTrigger(EnumManager.AnimatiorParameters.Fade.ToString());
        // gameManager.DETAP.gameObject.SetActive(true);
-        yield return new WaitForSeconds(waitBeforeChangeScene);
-        SceneManager.LoadScene(EnumManager.Scenes.SampleScene.ToString());
+       yield return new WaitForSeconds(waitBeforeChangeScene);
+      //  SceneManager.LoadScene(EnumManager.Scenes.SampleScene.ToString());
 
     }
     internal int FruitCount

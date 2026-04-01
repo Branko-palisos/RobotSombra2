@@ -20,7 +20,7 @@ public class Level1SceneController : SceneController
     { 
         base.Start();
         // cambiar numbero de frutas
-        gameManager.SetFruitCount(gameManager.GetFruitCount() + 95);
+       // gameManager.SetFruitCount(gameManager.GetFruitCount() + 95);
         //actualizar el TMP
         UpdateFruitCountTMP();
         playerBehaviour = FindObjectOfType<PlayerBehaviour>();
@@ -28,7 +28,7 @@ public class Level1SceneController : SceneController
 
     internal void UpdateFruitCountTMP()
     {
-        Debug.Log($"Update Fruit Count = {gameManager.fruitCount }");
+      //  Debug.Log($"Update Fruit Count = {gameManager.fruitCount }");
         fruitCountTMP.text = gameManager.fruitCount.ToString();
 
     }
@@ -36,7 +36,7 @@ public class Level1SceneController : SceneController
     {
         if (playerBehaviour.FruitCount > 99)
         {
-             submenuManager.Win();                             
+           //  submenuManager.Win();                             
              ChangeScene(EnumManager.Scenes.Level2);
             if (onWin != null)
             {
@@ -50,13 +50,16 @@ public class Level1SceneController : SceneController
     {
    
     }
-    void OnEnable()
+    protected override void OnEnable()
     {
+        Debug.Log("Level1 Scene Controller On Enable");
+        base.OnEnable();
         PlayerBehaviour.onGotFruit += CheckIfWin;
         FruitBehaviour.onGetFruit += UpdateFruitCountTMP;
     }
-    void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         PlayerBehaviour.onGotFruit -= CheckIfWin;
         FruitBehaviour.onGetFruit -= UpdateFruitCountTMP;
     }

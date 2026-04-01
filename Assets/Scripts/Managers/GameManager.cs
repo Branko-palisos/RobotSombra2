@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-   Level1SceneController Level1SceneController;
-   internal int fruitCount;
-   internal TextMeshProUGUI DETAP;
+    Level1SceneController Level1SceneController;
+    internal int fruitCount;
+    internal TextMeshProUGUI DETAP;
     PlayerBehaviour playerBehaviour;
     int lastCompletedLevel = 0;
     internal static GameManager gameManager;
@@ -19,13 +19,13 @@ public class GameManager : MonoBehaviour
         if (gameManager == null)
         {
             gameManager = this;
-        //    Debug.Log("Soy game manager y ya me assigne");
+            //    Debug.Log("Soy game manager y ya me assigne");
         }
         else
         {
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(gameObject);  
+        DontDestroyOnLoad(gameObject);
     }
     void Start()
     {
@@ -40,17 +40,17 @@ public class GameManager : MonoBehaviour
             SceneManager.GetActiveScene();
         }
     }
-    
-   
-    internal int GetFruitCount()
-    {
-        return fruitCount;
-    }
-    internal void SetFruitCount(int _amount)
-    {
-        fruitCount = _amount;
-     //   Debug.Log($"FruitCount ={fruitCount}");
-    }
+
+
+    /*int GetFruitCount()
+   {
+       return fruitCount;
+   }
+   internal void SetFruitCount(int _amount)
+   {
+       fruitCount = _amount;
+    //   Debug.Log($"FruitCount ={fruitCount}");
+   } */
     internal void ChangeLastLevelCompleted(int _amount)
     {
         lastCompletedLevel += _amount;
@@ -61,10 +61,13 @@ public class GameManager : MonoBehaviour
     {
         return lastCompletedLevel;
     }
-    
+    void UpdateFruitCount()
+    {
+        fruitCount += 1;
+    }
     void OnEnable()
     {
-       //PlayerBehaviour.onGotFruit += Level1SceneController.UpdateFruitCountTMP;
+        PlayerBehaviour.onGotFruit += UpdateFruitCount;
     }
 
     // para dejar de escuchar
@@ -73,7 +76,11 @@ public class GameManager : MonoBehaviour
 
     {
 
-       // PlayerBehaviour.onGotFruit -= Level1SceneController.UpdateFruitCountTMP;
+        PlayerBehaviour.onGotFruit -= UpdateFruitCount;
 
+    }
+    internal int FruitCount
+    {
+        get { return fruitCount; }
     }
 }

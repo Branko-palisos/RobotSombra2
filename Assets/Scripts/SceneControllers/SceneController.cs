@@ -5,8 +5,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
-{   
+{
+    [SerializeField]
     protected GameManager gameManager;
+    [SerializeField]
     protected SubmenuManager submenuManager;
     [SerializeField]
     TextMeshProUGUI Lv2FruitCount;
@@ -16,9 +18,9 @@ public class SceneController : MonoBehaviour
     {
         gameManager = GameManager.gameManager;
         submenuManager = SubmenuManager.submenuManager;
-       
+        Debug.Log($"SubmenuManager.. {submenuManager}");
     //    Debug.Log("Asignar game manager");
-    }
+}
    
     // Update is called once per frame
     internal void ChangeScene(EnumManager.Scenes _newScene)
@@ -27,21 +29,23 @@ public class SceneController : MonoBehaviour
     }
     void DeathReceptor()
     {
-        submenuManager.Lose();      
+        Debug.Log("Death Receptor");
+       submenuManager.Lose();      
     }
-    internal void UpdateFruitCountTMP()
+     void UpdateFruitCountTMP()
     {
         Debug.Log("Update Fruit Count");
-        Lv2FruitCount.text = gameManager.fruitCount.ToString();
+     //   Lv2FruitCount.text = gameManager.fruitCount.ToString();
 
     }
-    void OnEnable()
+    protected virtual void OnEnable()
     {
+        Debug.Log("Scene Controller OnEnable");
         FruitBehaviour.onGetFruit += UpdateFruitCountTMP;
         PlayerBehaviour.onPlayerDeath += DeathReceptor;
     }
 
-    void OnDisable()
+   protected virtual void OnDisable()
     {
         FruitBehaviour.onGetFruit -= UpdateFruitCountTMP;
         PlayerBehaviour.onPlayerDeath -= DeathReceptor;

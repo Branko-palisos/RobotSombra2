@@ -1,14 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
+//using System.Collections;
+//using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering;
+//using UnityEngine.Experimental.Rendering;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
+//using UnityEngine.UIElements;
 
 public class SubmenuManager : MonoBehaviour
+
 {
+    [SerializeField]
+    GameObject AWT;
+    
     private int min = 0;
+
     private int max = 3;
     [SerializeField]
     private TextMeshProUGUI gameOverTMP;
@@ -20,9 +25,11 @@ public class SubmenuManager : MonoBehaviour
      GameObject loseSubmenu;
     [SerializeField]
      SceneController sceneController;
+      
+
 
     // Start is called before the first frame update
-    private void Awake()
+   private void Awake()
     {
         winSubmenu.SetActive(false);
  
@@ -36,25 +43,23 @@ public class SubmenuManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
-    }
-    private void Update()
+      //  DontDestroyOnLoad(gameObject);
+    } 
+    private void Start()
     {
-        if (Input.GetKeyDown("q"))
-        {
-
-          
-        }
+      //  Debug.Log($"AWT ES {AWT.name} ");
     }
-    internal void Win()
+
+   /* internal void Win()
     {
       //  Debug.Log("Win");
       // Debug.Log("aparecer submenu");       
         winSubmenu.SetActive(true);
        
-    }
+    } */
     internal void Lose()
     {
+        Debug.Log("Lose");
         // activar submenu de perder
         loseSubmenu.SetActive(true);
 
@@ -70,10 +75,10 @@ public class SubmenuManager : MonoBehaviour
 
         // asignar text por TMP
         gameOverTMP.text = losingTextModifyied.ToString();
-    }
+    } 
     public void NextLevelButton()
     {
-        /*witch (SceneManager.GetActiveScene().name)
+        switch (SceneManager.GetActiveScene().name)
         {
             //   case "Level1":
             case nameof(EnumManager.Scenes.Level1):
@@ -88,14 +93,17 @@ public class SubmenuManager : MonoBehaviour
                 sceneController.ChangeScene(EnumManager.Scenes.Level4);
                 Debug.Log("next Level4");
                 break;
+            case nameof(EnumManager.Scenes.Level4):
+                sceneController.ChangeScene(EnumManager.Scenes.BossFight);
+                break;
             default:
                 Debug.Log($"{SceneManager.GetActiveScene().name}Not found");
                 break;
          
         }
-   */
-    }
-    public void ContinueButton()
+    } 
+   
+     public void ContinueButton()
         {
         Debug.Log("DCONTINUE button // antes"); 
         loseSubmenu.SetActive(false);
@@ -103,17 +111,28 @@ public class SubmenuManager : MonoBehaviour
         Debug.Log("DCONTINUE button // after");
         if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level2.ToString()))
            {
-        //    SceneManager.LoadScene(EnumManager.Scenes.Level2.ToString());
-          
+            SceneManager.LoadScene(EnumManager.Scenes.Level2.ToString());
+            Debug.Log(EnumManager.Scenes.Level2.ToString());
             Debug.Log("Disable Erkser");
            }
+        if (SceneManager.GetActiveScene().name.Equals(EnumManager.Scenes.Level1.ToString()))
+        {
+            Debug.Log("Vamos Hertics");
+           SceneManager.LoadScene(EnumManager.Scenes.Level1.ToString());
+
+            Debug.Log(EnumManager.Scenes.Level1.ToString());
+        }
 
 
-        }  
-     public void Test()
+    }
+
+    public void OnDisableFunction()
     {
-        print("test");
-        gameObject.SetActive(false);
+        AWT = FindAnyObjectByType<PlayerBehaviour>().gameObject;       
+        Debug.Log($"AWT ES {AWT.name} ");
+        Debug.Log(gameObject.name);
+        AWT.SetActive(false);
+       
     }
 
     //  SceneManager.LoadScene(EnumManager.Scenes.Level2.ToString());
